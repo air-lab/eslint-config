@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-nugsnet",
+  "name": "eslint-config-airlab",
   "version": "1.3.3",
   "description": "Eslint Config",
   "main": "index.js",
@@ -21,15 +21,16 @@
     "stylelint": "^14.14.0"
   },
   "dependencies": {
-    "@babel/core": "^7.19.3",
+    "@babel/core": "^7.19.6",
     "@babel/eslint-parser": "^7.19.1",
     "@csstools/postcss-sass": "^5.0.1",
     "@rushstack/eslint-patch": "^1.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.40.1",
-    "@typescript-eslint/parser": "^5.40.1",
+    "@types/node": "^18.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
     "@vue/eslint-config-typescript": "^11.0.2",
     "autoprefixer": "^10.4.12",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "eslint-plugin-vue": "^9.6.0",
     "postcss": "^8.4.18",
     "postcss-advanced-variables": "^3.0.1",
