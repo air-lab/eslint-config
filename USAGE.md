@@ -33,6 +33,7 @@ Create workflow file and add next settings to enable formatter:
  "extensions": {
   "recommendations": [
    "Vue.vscode-typescript-vue-plugin",
+   "stylelint.vscode-stylelint",
    "dbaeumer.vscode-eslint"
   ]
  },
