@@ -10,6 +10,9 @@
     "vue",
     "javascript"
   ],
+  "scripts": {
+    "build": ""
+  },
   "author": "Yan Zhabin",
   "license": "MIT",
   "perDependencies": {
