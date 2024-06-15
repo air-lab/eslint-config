@@ -29,7 +29,6 @@
     }
   },
   "dependencies": {
-<<<<<<< HEAD
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.3",
@@ -44,21 +43,6 @@
     "globals": "^15.9.0",
     "jiti": "^1.21.6",
     "postcss": "^8.4.41",
-=======
-    "@babel/core": "^7.23.6",
-    "@babel/eslint-parser": "^7.23.3",
-    "@babel/preset-env": "^7.23.6",
-    "@csstools/postcss-sass": "^5.0.1",
-    "@rushstack/eslint-patch": "^1.6.1",
-    "@types/node": "^20.10.4",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vue/eslint-config-typescript": "^12.0.0",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.19.2",
-    "postcss": "^8.4.32",
->>>>>>> 29917fb (Remove unused plugin.)
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-html": "^1.7.0",
     "postcss-input-range": "^5.0.0",
