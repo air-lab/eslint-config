@@ -69,8 +69,8 @@ importers:
         specifier: ^0.36.2
         version: 0.36.2(postcss-html@1.7.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
       sass:
-        specifier: ^1.77.5
-        version: 1.77.5
+        specifier: ^1.77.8
+        version: 1.77.8
       stylelint-config-standard-scss:
         specifier: ^13.1.0
         version: 13.1.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.4.5))
@@ -2027,8 +2027,8 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  sass@1.77.5:
-    resolution: {integrity: sha512-oDfX1mukIlxacPdQqNb6mV2tVCrnE+P3nVYioy72V5tlk56CPNcO4TCuFcaCRKKfJ1M3lH95CleRS+dVKL2qMg==}
+  sass@1.77.8:
+    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3246,7 +3246,7 @@ snapshots:
     dependencies:
       '@csstools/sass-import-resolve': 1.0.0
       postcss: 8.4.38
-      sass: 1.77.5
+      sass: 1.77.8
       source-map: 0.7.4
 
   '@csstools/postcss-scope-pseudo-class@3.0.1(postcss@8.4.38)':
@@ -4436,7 +4436,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  sass@1.77.5:
+  sass@1.77.8:
     dependencies:
       chokidar: 3.6.0
       immutable: 4.3.6
