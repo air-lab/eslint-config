@@ -1,8 +1,8 @@
 module.exports = {
-    parser: require("postcss-scss"),
+    parser: require('postcss-scss'),
     plugins: [
         require('@csstools/postcss-sass')({
-            "syntax": "postcss-scss"
+            'syntax': 'postcss-scss'
         }),
         require('postcss-preset-env')({
             autoprefixer: {
@@ -12,6 +12,6 @@ module.exports = {
         }),
         require("postcss-flexbugs-fixes"),
         require("postcss-input-range"),
-        require("postcss-scrollbar"),
+        require("postcss-scrollbar")
     ]
 }
