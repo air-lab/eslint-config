@@ -12,6 +12,6 @@ module.exports = {
         }),
         require("postcss-flexbugs-fixes"),
         require("postcss-input-range"),
-        require("postcss-scrollbar"),
+        require("postcss-scrollbar")
     ]
 }

@@ -14,11 +14,10 @@ npm i -D https://github.com/airlab/eslint-config.git
 
 Create `.eslintrc` file:
 
-```json
-{
-    "root": true,
-    "extends": "airlab"
-}
+```js
+import config from 'eslint-config-airlab'
+
+export default config
 ```
 
 Create workflow file and add next settings to enable formatter:
