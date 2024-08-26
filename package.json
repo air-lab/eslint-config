@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-airlab",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
@@ -46,6 +46,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-html": "^1.7.0",
     "postcss-input-range": "^5.0.0",
+    "postcss-place": "^10.0.0",
     "postcss-preset-env": "^10.0.2",
     "postcss-pxtorem": "^6.1.0",
     "postcss-scrollbar": "^0.5.1",

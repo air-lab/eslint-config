@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-require-imports */
 module.exports = {
     parser: require('postcss-scss'),
     plugins: [
@@ -10,8 +12,9 @@ module.exports = {
                 grid: false
             }
         }),
-        require("postcss-flexbugs-fixes"),
-        require("postcss-input-range"),
-        require("postcss-scrollbar")
+        require('postcss-flexbugs-fixes'),
+        require('postcss-input-range'),
+        require('postcss-scrollbar'),
+        require('postcss-place')
     ]
 }
