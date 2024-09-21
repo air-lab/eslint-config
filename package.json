@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-airlab",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
@@ -32,13 +32,12 @@
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.4",
-    "@csstools/postcss-sass": "^5.1.1",
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.10.0",
+    "@eslint/js": "^9.11.0",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@types/eslint__js": "^8.42.3",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "eslint-plugin-vue": "^9.28.0",
     "globals": "^15.9.0",
     "jiti": "^1.21.6",
@@ -52,12 +51,12 @@
     "postcss-scrollbar": "^0.5.1",
     "postcss-scss": "^4.0.9",
     "postcss-syntax": "^0.36.2",
-    "sass": "^1.78.0",
+    "sass-embedded": "^1.79.3",
     "stylelint": "^16.9.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-config-standard-vue": "^1.0.0",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.5.0",
+    "typescript-eslint": "^8.6.0",
     "vue-eslint-parser": "^9.4.3"
   }
 }

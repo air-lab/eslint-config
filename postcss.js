@@ -1,11 +1,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-require-imports */
 module.exports = {
-    parser: require('postcss-scss'),
+    synatax: require('postcss-scss'),
     plugins: [
-        require('@csstools/postcss-sass')({
-            'syntax': 'postcss-scss'
-        }),
         require('postcss-preset-env')({
             autoprefixer: {
                 flexbox: false,
