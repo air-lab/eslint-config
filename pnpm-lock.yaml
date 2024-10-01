@@ -21,9 +21,6 @@ importers:
       '@babel/preset-env':
         specifier: ^7.25.4
         version: 7.25.4(@babel/core@7.25.2)
-      '@csstools/postcss-sass':
-        specifier: ^5.1.1
-        version: 5.1.1(postcss@8.4.47)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.1.0
@@ -64,8 +61,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0(postcss@8.4.47)
       postcss-preset-env:
-        specifier: ^10.0.3
-        version: 10.0.3(postcss@8.4.47)
+        specifier: ^10.0.5
+        version: 10.0.5(postcss@8.4.47)
       postcss-pxtorem:
         specifier: ^6.1.0
         version: 6.1.0(postcss@8.4.47)
@@ -806,8 +803,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.47
 
-  '@csstools/postcss-light-dark-function@2.0.2':
-    resolution: {integrity: sha512-QAWWDJtJ7ywzhaMe09QwhjhuwB0XN04fW1MFwoEJMcYyiQub4a57mVFV+ngQEekUhsqe/EtKVCzyOx4q3xshag==}
+  '@csstools/postcss-light-dark-function@2.0.4':
+    resolution: {integrity: sha512-yHUt5DZ61Irvp72notmAl3Zt4Me50EWToWNocazyIFTVYFwwo/EucmV3hWi9zJehu3rOSvMclL7DzvRDfbak/A==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4.47
@@ -884,12 +881,6 @@ packages:
     peerDependencies:
       postcss: ^8.4.47
 
-  '@csstools/postcss-sass@5.1.1':
-    resolution: {integrity: sha512-La7bgTcM6YwPBLqlaXg7lMLry82iLv1a+S1RmgvHq2mH2Zd57L2anjZvJC8ACUHWc4M9fXws93dq6gaK0kZyAw==}
-    engines: {node: ^12 || ^14 || >=16}
-    peerDependencies:
-      postcss: ^8.4.47
-
   '@csstools/postcss-scope-pseudo-class@4.0.0':
     resolution: {integrity: sha512-+ZUOBtVMDcmHZcZqsP/jcNRriEILfWQflTI3tCTA+/RheXAg57VkFGyPDAilpQSqlCpxWLWG8VUFKFtZJPwuOg==}
     engines: {node: '>=18'}
@@ -919,10 +910,6 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4.47
-
-  '@csstools/sass-import-resolve@1.0.0':
-    resolution: {integrity: sha512-pH4KCsbtBLLe7eqUrw8brcuFO8IZlN36JjdKlOublibVdAIPHCzEnpBWOVUXK5sCf+DpBi8ZtuWtjF0srybdeA==}
-    engines: {node: '>=4.0.0'}
 
   '@csstools/selector-resolve-nested@2.0.0':
     resolution: {integrity: sha512-oklSrRvOxNeeOW1yARd4WNCs/D09cQjunGZUgSq6vM8GpzFswN+8rBZyJA29YFZhOTQ6GFzxgLDNtVbt9wPZMA==}
@@ -1197,10 +1184,6 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
-
-  chokidar@4.0.0:
-    resolution: {integrity: sha512-mxIojEAQcuEvT/lyXq+jf/3cO/KoA6z4CeNDGGevTybECPOMFCnQy3OPahluUkbqgPNGw5Bi78UC7Po6Lhy+NA==}
-    engines: {node: '>= 14.16.0'}
 
   color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -1899,8 +1882,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.47
 
-  postcss-preset-env@10.0.3:
-    resolution: {integrity: sha512-1nrZ4IeBXEEj53IMoRKE+k/Ub6nQb3gFjaxTeyUNG5zv3JQclFDY5GKKhAi3nsa1lnPMWgzQX+/1y6wUt2+I7Q==}
+  postcss-preset-env@10.0.5:
+    resolution: {integrity: sha512-ipPOgr3RY0utgJDbNoCX2dxKoQ4e4WO1pC21QhDlxCAX8+qC8O2Ezkzb54fd+8XtZ1UveA5gLjBsVo6dJDoWIg==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4.47
@@ -1995,10 +1978,6 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-
-  readdirp@4.0.1:
-    resolution: {integrity: sha512-GkMg9uOTpIWWKbSsgwb5fA4EavTR+SG/PMPoAY8hkhHfEEY0/vqljY+XHqtDf2cr2IJtoNRDbrrEpZUiZCkYRw==}
-    engines: {node: '>= 14.16.0'}
 
   regenerate-unicode-properties@10.2.0:
     resolution: {integrity: sha512-DqHn3DwbmmPVzeKj9woBadqmXxLvQoQIwu7nopMc72ztvxVmVk2SBhSnx67zuye5TP+lJsb/TBQsjLKhnDf3MA==}
@@ -2172,11 +2151,6 @@ packages:
     engines: {node: '>=16.0.0'}
     hasBin: true
 
-  sass@1.79.3:
-    resolution: {integrity: sha512-m7dZxh0W9EZ3cw50Me5GOuYm/tVAJAn91SUnohLRo9cXBixGUOdvmryN+dXpwR831bhoY3Zv7rEFt85PUwTmzA==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
-
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
@@ -2209,10 +2183,6 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
-
-  source-map@0.7.4:
-    resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==}
-    engines: {node: '>= 8'}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -3323,7 +3293,7 @@ snapshots:
       postcss: 8.4.47
       postcss-selector-parser: 6.1.2
 
-  '@csstools/postcss-light-dark-function@2.0.2(postcss@8.4.47)':
+  '@csstools/postcss-light-dark-function@2.0.4(postcss@8.4.47)':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.1(@csstools/css-tokenizer@3.0.1)
       '@csstools/css-tokenizer': 3.0.1
@@ -3403,13 +3373,6 @@ snapshots:
       '@csstools/utilities': 2.0.0(postcss@8.4.47)
       postcss: 8.4.47
 
-  '@csstools/postcss-sass@5.1.1(postcss@8.4.47)':
-    dependencies:
-      '@csstools/sass-import-resolve': 1.0.0
-      postcss: 8.4.47
-      sass: 1.79.3
-      source-map: 0.7.4
-
   '@csstools/postcss-scope-pseudo-class@4.0.0(postcss@8.4.47)':
     dependencies:
       postcss: 8.4.47
@@ -3438,8 +3401,6 @@ snapshots:
   '@csstools/postcss-unset-value@4.0.0(postcss@8.4.47)':
     dependencies:
       postcss: 8.4.47
-
-  '@csstools/sass-import-resolve@1.0.0': {}
 
   '@csstools/selector-resolve-nested@2.0.0(postcss-selector-parser@6.1.2)':
     dependencies:
@@ -3749,10 +3710,6 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  chokidar@4.0.0:
-    dependencies:
-      readdirp: 4.0.1
 
   color-convert@1.9.3:
     dependencies:
@@ -4403,7 +4360,7 @@ snapshots:
       postcss: 8.4.47
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@10.0.3(postcss@8.4.47):
+  postcss-preset-env@10.0.5(postcss@8.4.47):
     dependencies:
       '@csstools/postcss-cascade-layers': 5.0.0(postcss@8.4.47)
       '@csstools/postcss-color-function': 4.0.2(postcss@8.4.47)
@@ -4417,7 +4374,7 @@ snapshots:
       '@csstools/postcss-ic-unit': 4.0.0(postcss@8.4.47)
       '@csstools/postcss-initial': 2.0.0(postcss@8.4.47)
       '@csstools/postcss-is-pseudo-class': 5.0.0(postcss@8.4.47)
-      '@csstools/postcss-light-dark-function': 2.0.2(postcss@8.4.47)
+      '@csstools/postcss-light-dark-function': 2.0.4(postcss@8.4.47)
       '@csstools/postcss-logical-float-and-clear': 3.0.0(postcss@8.4.47)
       '@csstools/postcss-logical-overflow': 2.0.0(postcss@8.4.47)
       '@csstools/postcss-logical-overscroll-behavior': 2.0.0(postcss@8.4.47)
@@ -4531,8 +4488,6 @@ snapshots:
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
-
-  readdirp@4.0.1: {}
 
   regenerate-unicode-properties@10.2.0:
     dependencies:
@@ -4672,12 +4627,6 @@ snapshots:
       sass-embedded-win32-ia32: 1.79.3
       sass-embedded-win32-x64: 1.79.3
 
-  sass@1.79.3:
-    dependencies:
-      chokidar: 4.0.0
-      immutable: 4.3.7
-      source-map-js: 1.2.1
-
   semver@6.3.1: {}
 
   semver@7.6.3: {}
@@ -4699,8 +4648,6 @@ snapshots:
       is-fullwidth-code-point: 3.0.0
 
   source-map-js@1.2.1: {}
-
-  source-map@0.7.4: {}
 
   string-width@4.2.3:
     dependencies:
