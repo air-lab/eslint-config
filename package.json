@@ -1,5 +1,5 @@
 {
-  "name": "@airlab/eslint-config",
+  "name": "@air-lab/eslint-config",
   "version": "2.1.0",
   "description": "Eslint Config",
   "main": "index.mjs",
@@ -29,7 +29,7 @@
     }
   },
   "publishConfig": {
-    "@airlab:registry": "https://npm.pkg.github.com"
+    "@air-lab:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@babel/core": "^7.28.0",
