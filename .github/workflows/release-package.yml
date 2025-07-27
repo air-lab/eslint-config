@@ -1,4 +1,4 @@
-name: Node.js Package
+name: airlab/eslint-config
 
 on:
   release:
