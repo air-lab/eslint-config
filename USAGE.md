@@ -23,7 +23,7 @@ export default config
 or
 
 ```js
-import config from '@airlab/eslint-config'
+import config from '@air-lab/eslint-config'
 
 export default config
 ```

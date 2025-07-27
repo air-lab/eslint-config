@@ -1,4 +1,4 @@
-name: airlab/eslint-config
+name: air-lab/eslint-config
 
 on:
   release:
