@@ -7,7 +7,10 @@ export default [
   { 
     files: ['**/*.{js,mjs,cjs,ts,tsx,mts,vue}'],
     languageOptions: { 
-      globals: globals.browser 
+      globals: globals.browser,
+      parserOptions: {
+        warnOnUnsupportedTypeScriptVersion: false,
+      },
     }
   },
   ...ts,

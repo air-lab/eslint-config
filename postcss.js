@@ -12,6 +12,8 @@ module.exports = {
         require('postcss-flexbugs-fixes'),
         require('postcss-input-range'),
         require('postcss-scrollbar'),
-        require('postcss-place')
+        require('postcss-place'),
+        require('@csstools/postcss-logical-viewport-units'),
+        require('postcss-gap-properties'),
     ]
 }

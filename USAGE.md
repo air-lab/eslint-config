@@ -20,6 +20,14 @@ import config from 'eslint-config-airlab'
 export default config
 ```
 
+or
+
+```js
+import config from '@airlab/eslint-config'
+
+export default config
+```
+
 Create workflow file and add next settings to enable formatter:
 
 ```json
