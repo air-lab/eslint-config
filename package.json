@@ -1,6 +1,6 @@
 {
   "name": "@air-lab/eslint-config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
@@ -25,22 +25,22 @@
   "pnpm": {
     "overrides": {
       "postcss": "^8.5.6",
-      "stylelint": "^16.22.0"
+      "stylelint": "^16.23.1"
     }
   },
   "publishConfig": {
     "@air-lab:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@babel/core": "^7.28.0",
+    "@babel/core": "^7.28.3",
     "@babel/eslint-parser": "^7.28.0",
-    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-env": "^7.28.3",
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.32.0",
-    "@stylistic/eslint-plugin": "^5.2.2",
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.32.0",
-    "eslint-plugin-vue": "^10.3.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-vue": "^10.4.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
     "postcss": "^8.5.6",
@@ -50,17 +50,17 @@
     "postcss-html": "^1.8.0",
     "postcss-input-range": "^6.0.0",
     "postcss-place": "^10.0.0",
-    "postcss-preset-env": "^10.2.4",
+    "postcss-preset-env": "^10.3.0",
     "postcss-pxtorem": "^6.1.0",
     "postcss-scrollbar": "^0.5.1",
     "postcss-scss": "^4.0.9",
     "postcss-syntax": "^0.36.2",
-    "sass-embedded": "^1.89.2",
-    "stylelint": "^16.22.0",
+    "sass-embedded": "^1.90.0",
+    "stylelint": "^16.23.1",
     "stylelint-config-standard-scss": "^15.0.1",
     "stylelint-config-standard-vue": "^1.0.0",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0",
     "vue-eslint-parser": "^10.2.0"
   }
 }
