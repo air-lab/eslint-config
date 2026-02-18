@@ -1,7 +1,6 @@
 name: air-lab/eslint-config
 
 permissions:
-  id-token: write # Required for OIDC
   contents: read
 
 on:
@@ -18,30 +17,22 @@ jobs:
     permissions:
       contents: read
       packages: write
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: pnpm/action-setup@v4
         with:
           version: 10
-
-      - name: Setup Node for install
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 24
           registry-url: "https://registry.npmjs.org/"
           cache: "pnpm"
-
       - run: pnpm install --frozen-lockfile
-
-      - name: Setup Node for GitHub Packages
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 24
           registry-url: "https://npm.pkg.github.com"
           scope: "@air-lab"
-
       - name: Publish to GitHub Packages
         run: pnpm publish --no-git-checks --registry=https://npm.pkg.github.com
         env:
@@ -51,16 +42,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
+      id-token: write
     steps:
       - uses: actions/checkout@v4
-
       - uses: pnpm/action-setup@v4
         with:
           version: 10
-
-      - name: Setup Node for install
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 24
           registry-url: "https://registry.npmjs.org/"
@@ -68,19 +56,5 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Setup Node for npmjs
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          registry-url: "https://registry.npmjs.org/"
-          cache: "pnpm"
-
-      - name: Publish to npmjs
-        run: |
-          cat > /tmp/npmrc-npmjs <<'NPMRC'
-          registry=https://registry.npmjs.org/
-          //registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
-          NPMRC
-          NPM_CONFIG_USERCONFIG=/tmp/npmrc-npmjs pnpm publish --no-git-checks --registry=https://registry.npmjs.org/ --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish to npmjs via OIDC
+        run: npm publish --access public --provenance
