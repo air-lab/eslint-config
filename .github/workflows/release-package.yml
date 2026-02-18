@@ -12,45 +12,51 @@ on:
       - "v*"
   workflow_dispatch:
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
       contents: read
+      packages: write
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v4
         with:
           version: 10
 
-      - name: Setup Node.js for publishing to GitHub Packages
+      # 1) Install using npmjs
+      - name: Setup Node for install
         uses: actions/setup-node@v4
         with:
-          node-version: 25
-          registry-url: "https://npm.pkg.github.com/"
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Publish to GitHub Packages
-        run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Setup Node.js for publishing to npmjs.com
-        uses: actions/setup-node@v4
-        with:
-          node-version: 25
+          node-version: 24
           registry-url: "https://registry.npmjs.org/"
           cache: "pnpm"
 
-      - name: Remove user npm config to avoid registry conflicts
-        run: rm -f ~/.npmrc
+      - run: pnpm install --frozen-lockfile
 
-      - name: Publish to npmjs.com
+      # 2) Publish to GitHub Packages (ONLY for @air-lab scope)
+      - name: Setup Node for GitHub Packages
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@air-lab"
+
+      - name: Publish to GitHub Packages
+        run: pnpm publish --no-git-checks --registry=https://npm.pkg.github.com
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3) Publish to npmjs
+      - name: Setup Node for npmjs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: "https://registry.npmjs.org/"
+          cache: "pnpm"
+
+      - name: Publish to npmjs
         run: pnpm publish --no-git-checks --registry=https://registry.npmjs.org/ --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
