@@ -47,9 +47,8 @@ jobs:
           registry-url: "https://registry.npmjs.org/"
           cache: "pnpm"
 
-      - name: Remove scoped registry from .npmrc
-        run: |
-          sed -i '/^@airlab:registry=/d' .npmrc
+      - name: Remove user npm config to avoid registry conflicts
+        run: rm -f ~/.npmrc
 
       - name: Publish to npmjs.com
         run: pnpm publish --no-git-checks --registry=https://registry.npmjs.org/ --access public
