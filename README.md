@@ -1,7 +1,5 @@
 # Airlab Eslint Config
 
-[![Publish Package](https://github.com/air-lab/eslint-config/actions/workflows/publish.yml/badge.svg)](https://github.com/air-lab/eslint-config/actions/workflows/publish.yml)
-
 [![air-lab/eslint-config](https://github.com/air-lab/eslint-config/actions/workflows/release-package.yml/badge.svg)](https://github.com/air-lab/eslint-config/actions/workflows/release-package.yml)
 
 Enables code linting for mixed Vue/Typescript, Typescript and JavaScript projects.
