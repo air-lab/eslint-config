@@ -12,7 +12,7 @@ pnpm add -D https://github.com/airlab/eslint-config.git
 npm i -D https://github.com/airlab/eslint-config.git
 ```
 
-Create `.eslintrc` file:
+Create `eslint.config.mjs` file:
 
 ```js
 import config from 'eslint-config-airlab'
