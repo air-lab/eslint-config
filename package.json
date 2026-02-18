@@ -1,6 +1,6 @@
 {
   "name": "@air-lab/eslint-config",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
