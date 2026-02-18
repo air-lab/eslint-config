@@ -15,7 +15,10 @@
   },
   "author": "Yan Zhabin",
   "license": "MIT",
-  "perDependencies": {
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
     "eslint": ">=9",
     "postcss": ">=8"
   },
@@ -32,16 +35,14 @@
     "@babel/core": "^7.29.0",
     "@babel/eslint-parser": "^7.28.6",
     "@babel/preset-env": "^7.29.0",
+    "@csstools/postcss-logical-viewport-units": "^4.0.0",
     "@eslint/eslintrc": "^3.3.3",
-    "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.8.0",
     "autoprefixer": "^10.4.24",
-    "eslint": "^10.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.3.0",
     "jiti": "^2.6.1",
     "postcss": "^8.5.6",
-    "@csstools/postcss-logical-viewport-units": "^4.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-gap-properties": "^7.0.0",
     "postcss-html": "^1.8.1",
@@ -56,8 +57,12 @@
     "stylelint": "^17.3.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-config-standard-vue": "^1.0.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.0",
     "vue-eslint-parser": "^10.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0"
   }
 }
