@@ -15,6 +15,14 @@
   },
   "author": "Yan Zhabin",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/air-lab/eslint-config.git"
+  },
+  "homepage": "https://github.com/air-lab/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/air-lab/eslint-config/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
