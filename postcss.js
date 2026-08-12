@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-require-imports */
 module.exports = {
-    synatax: require('postcss-scss'),
+    syntax: require('postcss-scss'),
     plugins: [
         require('postcss-preset-env')({
             autoprefixer: {
