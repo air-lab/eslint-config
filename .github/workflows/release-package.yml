@@ -16,9 +16,9 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v5
+      - uses: pnpm/action-setup@v6
         with:
-          version: 10
+          version: 11.16.0
       - uses: actions/setup-node@v6
         with:
           node-version: 24
@@ -42,9 +42,9 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v5
+      - uses: pnpm/action-setup@v6
         with:
-          version: 10
+          version: 11.16.0
       - uses: actions/setup-node@v6
         with:
           node-version: 24
